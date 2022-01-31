@@ -74,7 +74,7 @@ function addNames(e){
 }
 return (
    <div className="App" style={{border: " 1px solid green", margin: 5}}>
-    <h5> useState Hooks </h5>
+    <h5>1. useState Hooks </h5>
     <h6> manually assignment operator cann't rerder the react component, useState assing the value to variable </h6>
     <button onClick={changeName}>Change Name -> {egname} click here ""Not work""</button>
     <br />
@@ -88,7 +88,8 @@ return (
     <button onClick={previousStateIncrement}> prevState increment + 2 </button>
 
     <button onClick={initValue}> Initial value {num}, changed from </button>
-    <hr />
+    <br />
+    -----------------------------------------------------------------------------------------
     <h5> Form Handling </h5>
 
     <form onSubmit={addNames}>
