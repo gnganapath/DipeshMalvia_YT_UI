@@ -1,12 +1,13 @@
 import React from 'react';
 import  './App.css';
-import { UseStateHook} from './hooks-list/usestatehook';
-
+import { FunctionComponent } from './functioncomponent'
+import { UseStateHookDemo} from './hooks-components/usestatehook';
 function App() {
   return (
     <div className="App">
       <div> Hello React Hooks 
-        <UseStateHook />
+        <FunctionComponent />
+        <UseStateHookDemo />
       </div>
     </div>
   );
