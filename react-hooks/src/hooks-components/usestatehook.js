@@ -6,7 +6,7 @@ function initialValue(){
     return 0;
 }
 
-export function UseStateHookDemo() {
+function UseStateHookDemo() {
 let egname ="ganapath";
 function changeName(){
     egname = " React Name change";
@@ -106,6 +106,6 @@ return (
 )
 }
 
-
+export default UseStateHookDemo;
 
 

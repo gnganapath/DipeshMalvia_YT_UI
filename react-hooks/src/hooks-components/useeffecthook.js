@@ -1,6 +1,6 @@
 import React from 'react';
 
-function UseEffectHook() {
+export function UseEffectHook() {
     return (
         <div className="App">
         <h5> useEffecte Hooks </h5>
@@ -10,4 +10,4 @@ function UseEffectHook() {
     );
 }
 
-export default UseEffectHook;
+ 
