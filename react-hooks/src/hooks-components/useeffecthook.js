@@ -1,11 +1,16 @@
 import React from 'react';
+import ClassComponent from './ClassComponent';
+import { FunctionComponent } from './FunctionComponent';
 
 export function UseEffectHook() {
     return (
-        <div className="App">
+        <div className="App" style={{border: '1px solid blue', margin: 5}}>
         <h5>2. useEffecte Hooks </h5>
-        <div> Export  fun Name() </div>
-   
+        <h6> Export  fun Name() </h6>
+        <div>
+            <div style={{width: '50%', display: 'inline-block'}}> <ClassComponent /> </div>
+            <div style={{width: '50%', display: 'inline-block'}}> <FunctionComponent /> </div>   
+            </div>
         </div>
     );
 }
