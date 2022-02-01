@@ -5,11 +5,20 @@ export function FunctionComponent() {
     const [ time, setTime ]= useState( new Date().toString());
     const [ message,   setMessage] = useState( "Function component");
 
+    // useEffect(() => {
+    // //Runs on every render
+    // });
+
     // Type-1 compomnent mounted and updated - first time adn Every method call/ variable update
     useEffect(() =>{
         console.log("Type-1 Every time function component mounted/ updated")
     })
 
+
+
+    // useEffect(() => {
+    // //Runs only on the first render
+    // }, []);
 
     // Type-2 Call only once which is comonent mounted - Mostly for Fet./ Axios call 
     useEffect(() =>{
@@ -22,6 +31,13 @@ export function FunctionComponent() {
             // this.setState({data: []})
             // }
     }, []);
+
+
+
+    // useEffect(() => {
+    //     //Runs on the first render
+    //     //And any time any dependency value changes
+    //     }, [prop, state]);
 
     // Type-3 Call only once which is comonent mounted - Mostly for Fet./ Axios call 
     useEffect(() =>{
@@ -43,6 +59,13 @@ export function FunctionComponent() {
         <div> {time} <button onClick={showDate}> Show Date</button> </div>
         <div> time varible based Effect call. Type3->  <button onClick={ () => setMessage("Function called , particular var (time) depenndent")}>  indepenndent fun call Click</button> --> {message} </div>
             
+            <h6>The useEffect Hook allows you to perform side effects in your components.
+
+            Some examples of side effects are: fetching data, directly updating the DOM, and timers.
+
+            useEffect accepts two arguments. The second argument is optional.
+
+           <br /> useEffect ( function, dependency)</h6>
         </div>
     );
 }
