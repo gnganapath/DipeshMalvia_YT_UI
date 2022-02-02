@@ -1,6 +1,6 @@
 import React from 'react';
 import ClassComponent from './ClassComponent';
-import { FunctionComponent } from './FunctionComponent';
+import { UseEffectFunctionComponent } from './UseEffectFunctionComponent';
 
 export function UseEffectHook() {
     return (
@@ -9,7 +9,7 @@ export function UseEffectHook() {
         <h6> Export  fun Name() </h6>
         <div>
             <div style={{width: '50%', display: 'inline-block'}}> <ClassComponent /> </div>
-            <div style={{width: '50%', display: 'inline-block'}}> <FunctionComponent /> </div>   
+            <div style={{width: '50%', display: 'inline-block'}}> <UseEffectFunctionComponent /> </div>   
             </div>
         </div>
     );

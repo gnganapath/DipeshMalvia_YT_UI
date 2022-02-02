@@ -1,7 +1,7 @@
 import React , { useState, useEffect } from 'react';
 
 
-export function FunctionComponent() {
+export function UseEffectFunctionComponent() {
     const [ time, setTime ]= useState( new Date().toString());
     const [ message,   setMessage] = useState( "Function component");
 
@@ -20,9 +20,9 @@ export function FunctionComponent() {
     // //Runs only on the first render
     // }, []);
 
-    // Type-2 Call only once which is comonent mounted - Mostly for Fet./ Axios call 
+    // Type-2 Call only once which is component mounted - Mostly for Fetch / Axios call 
     useEffect(() =>{
-        console.log("Type-2 function component mounted only once - Axios or Fetch APi call in the initial level")
+        console.log("Type-2 function component mounted only once - Axios or Fetch API call in the initial level")
             //const res = await axios.get('https://jsonplaceholder.typicode.com/users')
             // if(xtype.type(res.data) === 'array'){
             // this.setState({data: res.data})
@@ -39,9 +39,9 @@ export function FunctionComponent() {
     //     //And any time any dependency value changes
     //     }, [prop, state]);
 
-    // Type-3 Call only once which is comonent mounted - Mostly for Fet./ Axios call 
+    // Type-3 Call only once which is component mounted - Mostly for Fetch./ Axios call 
     useEffect(() =>{
-        console.log("Type-3 Dependency based use Effect, whenver time value get changed this useEffect trigger")
+        console.log("Type-3 Dependency based use Effect, whenever time value get changed this useEffect trigger")
         const interval = setInterval(showDate, 1000);
 
         return() =>{

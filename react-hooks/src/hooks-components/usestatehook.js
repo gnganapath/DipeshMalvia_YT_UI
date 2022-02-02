@@ -69,7 +69,7 @@ function initValue(){
 function addNames(e){
     e.preventDefault();
     setNames([...names, { id: names.length, name:name }]);
-    //setNames([...names, {  name }]);  // this also work , but key error for arrya iteration gives error, {names.map((item) => ( <li}> {item.name} </li> )) }   
+    //setNames([...names, {  name }]);  // this also work , but key error for array iteration gives error, {names.map((item) => ( <li}> {item.name} </li> )) }   
     setName("")
 }
 return (
