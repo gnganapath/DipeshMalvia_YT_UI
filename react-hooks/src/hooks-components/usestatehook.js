@@ -33,7 +33,7 @@ function changeStateVariable(){
     setSteps(true);     console.log(steps) // it will  true but not show in UI  {steps}
     console.log(typeof(new Date()))
 
-    // afternpm install xtype --save *** npm pacakage installation
+    // after npm install xtype --save *** npm pacakage installation
     //xtype.type - JS data type based type will return
 
     console.log(xtype.type(new Date())) // date
