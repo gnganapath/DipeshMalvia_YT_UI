@@ -27,9 +27,9 @@ const [counter, setCounter] = useState(0);
             <button onClick={increment}>Increment</button>
             <button onClick={decrement}>decrement</button>
              <div>
-                <CounterContext.Provider value = "Hello Context">
-                    <div style={{width: '50%', display: 'inline-block'}}> <CComponentChild  counter = {counter} /> </div>
-                    <div style={{width: '50%', display: 'inline-block'}}> <FComponentChild  counter = {counter}  /> </div> 
+                <CounterContext.Provider value = {{counter, setCounter}}>
+                    {/*<div style={{width: '50%', display: 'inline-block'}}> <CComponentChild   /> </div>*/}
+                    <div style={{width: '50%', display: 'inline-block'}}> <FComponentChild   /> </div> 
                 </CounterContext.Provider>  
             </div>
         </div>
