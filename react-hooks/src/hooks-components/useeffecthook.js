@@ -8,9 +8,9 @@ export function UseEffectHook() {
         <h5>2. useEffecte Hooks </h5>
         <h6> Export  fun Name() </h6>
         <div>
-            <div style={{width: '50%', display: 'inline-block'}}> <ClassComponent /> </div>
+            <div style={{width: '50%', display: 'inline-block'}}> <ClassComponent  /> </div>
             <div style={{width: '50%', display: 'inline-block'}}> <UseEffectFunctionComponent /> </div>   
-            </div>
+        </div>
         </div>
     );
 }
