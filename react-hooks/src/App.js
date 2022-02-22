@@ -15,14 +15,14 @@ function App() {
 
         <UseStateHookDemo />
 
-        <UseEffectHook />
-
-        <UseRefHook />
+        <UseEffectHook />        
 
         <>
           <UseContextUsages />
           <UseContextHook />
         </>
+
+        <UseRefHook />
       </div>
     </div>
   );
