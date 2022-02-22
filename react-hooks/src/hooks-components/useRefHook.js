@@ -5,7 +5,7 @@ export default function useRefHookDemo(){
 /* 
 useRef:
 =======
-1. DOM reference - focus input textbox  - retunr Object - has property current
+1. DOM reference - focus input textbox  - return Object - has property current
 2. useRef for storing the previous state
 3. hold mutable value prevent re-render of component
 

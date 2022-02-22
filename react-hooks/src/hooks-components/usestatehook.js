@@ -48,7 +48,7 @@ function changeStateVariable(){
 }
 
 function increment(){
-    console.log('every click called')
+ console.log('every click called')
  setCount( count +1 )
 //setCount( count +1 )  // adding the same twice can't increment thje variable 2 time. So to impact hte previous make the prevState to get previous state value
 }

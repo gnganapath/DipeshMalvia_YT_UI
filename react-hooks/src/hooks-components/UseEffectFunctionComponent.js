@@ -1,5 +1,5 @@
 import React , { useState, useEffect } from 'react';
-
+import xtype from 'xtypejs';    // xtype used to detect exact data type and value 
 
 export function UseEffectFunctionComponent() {
     const [ time, setTime ]= useState( new Date().toString());

@@ -1,6 +1,6 @@
 import React from 'react';
 //# Type-1.
-// function FName/ComponentName() { return <div> method-1 </div> }  // use retunr ( <> </> for more than )
+// function FName/ComponentName() { return <div> method-1 </div> }  // use return ( <> </> for more than )
 // export default ComponentName;
 
 //# Type-2.
@@ -8,8 +8,8 @@ import React from 'react';
 
 // return (
 //    <>
-//     <div> Eeport default fun Name() </div>
-//  <div> export const  Arrarow FunName = () => import Braces  component Name</div>
+//     <div> Export default fun Name() </div>
+//     <div> 3-type=> export const  Arrarow FunName = () => import Braces  component Name</div>
 //  </>
 // )
 // }
