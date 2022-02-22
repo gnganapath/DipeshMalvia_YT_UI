@@ -3,7 +3,9 @@ import React ,{ useState, useMemo } from 'react';
 export const UseMemoHooEg = () =>{
     const [count, setCount] = useState(1);
     //useMemo is similar syntax for useEffect 
-    const result = useMemo(() => { return factorialResult(count) },[count] );
+    const result = useMemo(() => {
+         return factorialResult(count) 
+        },[count] );
     const [name, setName] = useState();
 
     return (
