@@ -10,6 +10,7 @@ export const FComponentGreatGrandChild = () =>{
         <h5> Great grand child component recive from Parent --> {counter}</h5>
         <button onClick= { ()=> setCounter(counter +10 )}>Increment by 10</button>
         <button onClick= { ()=> setCounter(counter -5 )}>Decrement by 5</button>
+        <p>Note: update the use context from anywhere doesn't fil to Class component</p>
         </>
     )
 }
