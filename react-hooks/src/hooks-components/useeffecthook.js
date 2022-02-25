@@ -1,6 +1,6 @@
 import React from 'react';
-import ClassComponent from './ClassComponent';
-import { UseEffectFunctionComponent } from './UseEffectFunctionComponent';
+import ClassComponent from './useEffectHook/ClassComponent';
+import { UseEffectFunctionComponent } from './useEffectHook/UseEffectFunctionComponent';
 
 
 /*
