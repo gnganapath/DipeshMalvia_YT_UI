@@ -7,7 +7,9 @@ import  UseRefHook from './hooks-components/useRefHook';
 import {UseContextUsages} from './hooks-components/useContextScenerioDemo/useContextUsages';
 import { UseContextHook } from './hooks-components/useContextHook/useContextHook';
 import { UseMemoHook } from './hooks-components/useMemoHook';
-
+import { UseCallbackHook } from './hooks-components/useCallbackHook';
+//
+import { CustomHook } from './hooks-components/customHook';
 function App() {
   return (
     <div className="App">
@@ -23,9 +25,14 @@ function App() {
           <UseContextHook />
         </>
 
-        <UseRefHook />
+        <UseRefHook />        
 
+        
         <UseMemoHook />
+
+        <UseCallbackHook />
+
+        {/*<CustomHook />*/}
       </div>
     </div>
   );
