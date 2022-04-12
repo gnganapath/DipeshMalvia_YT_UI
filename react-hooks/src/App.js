@@ -10,6 +10,8 @@ import { UseMemoHook } from './hooks-components/useMemoHook';
 import { UseCallbackHook } from './hooks-components/useCallbackHook';
 //
 import { CustomHook } from './hooks-components/customHook';
+
+import { ReactHookFormEg } from './form/reactHookForm';
 function App() {
   return (
     <div className="App">
@@ -33,6 +35,8 @@ function App() {
         <UseCallbackHook />
 
         {/*<CustomHook />*/}
+
+        <ReactHookFormEg />
       </div>
     </div>
   );
