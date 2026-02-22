@@ -1,0 +1,11 @@
+npm i react-router-domm
+
+1.Navigation on button click, - Menu links, Left menu , submenu
+2.Navigation programmaticaly - After login allow to dahsboard
+3.Dynamic routes - constuct based on the feature product/{productID} - reused component placed
+4.Nested Rotues - Main product -> proudct/details/{prodcutID}
+5.Route Parameters - product/{productID}/status?=ordereded
+6.Lazy routing
+7.Authentication
+
+

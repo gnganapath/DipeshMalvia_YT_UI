@@ -1,8 +1,5 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+ 
 }
 
 .logo {
@@ -39,4 +36,20 @@
 
 .read-the-docs {
   color: #888;
+}
+
+/* router action styles*/
+nav{
+  background-color: #ccc;
+  padding: 15px 30px;
+  width: 100%
+  }
+
+nav a {
+  margin-right:15px;
+}
+
+nav a.active{
+  font-weight: 500;
+  color: green;
 }
