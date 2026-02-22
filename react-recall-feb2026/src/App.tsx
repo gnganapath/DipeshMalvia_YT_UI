@@ -1,14 +1,13 @@
 import  { useState } from "react";
 import { Suspense, lazy } from "react";
 import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom';
-import NavBar from './components/Navbar';
-
+import HookNavBar from './hooks/HookNavbar';
 
 
 import './App.css';
 
-// import Login from "./components/Login";
-const LazyLoginComponent = lazy(()=>import("./components/Login"));
+// import hooks home from "./components/HooksHome";
+const LazyHookComponent = lazy(()=>import("./hooks/HooksHome"));
 
 
 function PageNotFound() {
@@ -20,23 +19,19 @@ function App() {
   return (
     <>
       <BrowserRouter>
-      {/* Navigation */}
-      <NavBar />
+      <HookNavBar />
 
-      {/* Routes */}
-      <Routes>
-        
-        <Route path="/" element={
-          <Suspense fallback="...loading...">
-            <LazyLoginComponent />
-          </Suspense>
-        } />
+      <Routes>        
+        <Route path="/" element={ <Suspense fallback="...loading...">
+                                              <LazyHookComponent />
+                                  </Suspense>
+                                } />
 
-        <Route path="/products" element={<Products />}>    {/*nested route */}
-            <Route index element={<ProductsFeatures />} />    {/* index route */}
+        {/*<Route path="/products" element={<Products />}>    
+            <Route index element={<ProductsFeatures />} />     
             <Route path="feature" element={<ProductsFeatures />} />
             <Route path="details" element={<ProductsDetails />} />
-        </Route>
+        </Route>*/}
 
         
         <Route path="*" element={<PageNotFound />} />
