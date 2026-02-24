@@ -9,6 +9,7 @@ return(
         <NavLink to="/contact">Contact</NavLink>
         <NavLink to="/products"> [Product - Nested Routes + index route] </NavLink>
         <NavLink to="/users"> [Users - Dynamic routes, specific, then nested routes] </NavLink>
+        <NavLink to="/login"> Login </NavLink>
       </nav>
 )
 }

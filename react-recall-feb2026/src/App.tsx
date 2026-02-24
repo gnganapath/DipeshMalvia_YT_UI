@@ -1,13 +1,13 @@
 import  { useState } from "react";
 import { Suspense, lazy } from "react";
 import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom';
-import HooksNavBar from './hooks/HooksNavbar';
+import HooksNavBar from "./React-hooks/HooksNavBar";
 
 
 import './App.css';
 
-// import hooks home from "./components/HooksHome";
-const LazyHookComponent = lazy(()=>import("./hooks/HooksHome"));
+// import hooks home from "./React-hooks/HooksHome";
+const LazyHookComponent = lazy(()=>import("./React-hooks/HooksHome"));
 
 
 function PageNotFound() {

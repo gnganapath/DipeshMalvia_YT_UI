@@ -1,20 +1,20 @@
 import  { useState } from "react";
 import { Suspense, lazy } from "react";
 import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom';
-import NavBar from './components/Navbar';
+import NavBar from './React-Router-dom/Navbar';
 
 
-import { ProductsFeatures, ProductsDetails } from  "./components/Products";
-import Products from "./components/Products";
+import { ProductsFeatures, ProductsDetails } from  "./React-Router-dom/Products";
+import Products from "./React-Router-dom/Products";
 
-import Users from "./components/Users";
-import UserDetail from "./components/UserDetail";
-import AdminUser from "./components/AdminUser";
+import Users from "./React-Router-dom/Users";
+import UserDetail from "./React-Router-dom/UserDetail";
+import AdminUser from "./React-Router-dom/AdminUser";
 
 import './App.css';
 
-// import Login from "./components/Login";
-const LazyLoginComponent = lazy(()=>import("./components/Login"));
+// import Login from "./React-Router-dom/Login";
+const LazyLoginComponent = lazy(()=>import("./React-Router-dom/Login"));
 
 function Home() {
   const navigate = useNavigate();
@@ -36,21 +36,18 @@ function Contact() {
 function PageNotFound() {
   return <h1>No Page found</h1>;
 }
-
 function RouterApp() {
-
   return (
     <>
       <BrowserRouter>
       {/* Navigation */}
       <NavBar />
-
       {/* Routes */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        {/*<Route path="/login" element={<Login />} />*/}
+        {/*<Route path="/login" element={<Login />} /> ,,, below is lazy loading*/}
         <Route path="/login" element={
           <Suspense fallback="...loading...">
             <LazyLoginComponent />
@@ -66,7 +63,6 @@ function RouterApp() {
         {/*<Route path="/users" element={<Users />} />
         <Route path="/users/:userId" element={<UserDetail />} />
         <Route path="/users/admin" element={<AdminUser />} />*/}
-
         {/*We can make it sepeare or nested dynamic routes + useParams to get dynamic route value*/}
 
         <Route path="/users" element={<Users />} >
