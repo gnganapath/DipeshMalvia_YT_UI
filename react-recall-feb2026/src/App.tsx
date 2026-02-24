@@ -1,7 +1,7 @@
 import  { useState } from "react";
 import { Suspense, lazy } from "react";
 import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom';
-import HookNavBar from './hooks/HookNavbar';
+import HooksNavBar from './hooks/HooksNavbar';
 
 
 import './App.css';
@@ -19,7 +19,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-      <HookNavBar />
+      <HooksNavBar />
 
       <Routes>        
         <Route path="/" element={ <Suspense fallback="...loading...">
