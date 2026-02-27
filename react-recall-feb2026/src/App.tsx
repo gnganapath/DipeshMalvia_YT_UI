@@ -2,6 +2,7 @@ import  { useState } from "react";
 import { Suspense, lazy } from "react";
 import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom';
 import HooksNavBar from "./React-hooks/HooksNavBar";
+import UseStateComponent from './React-hooks/useStateHook/UseStateComponent';
 
 
 import './App.css';
@@ -27,6 +28,7 @@ function App() {
                                   </Suspense>
                                 } />
 
+        <Route path="/usestate" element={<UseStateComponent />} />
         {/*<Route path="/products" element={<Products />}>    
             <Route index element={<ProductsFeatures />} />     
             <Route path="feature" element={<ProductsFeatures />} />
