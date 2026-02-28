@@ -3,7 +3,9 @@ import { Suspense, lazy } from "react";
 import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom';
 import HooksNavBar from "./React-hooks/HooksNavBar";
 import UseStateComponent from './React-hooks/useStateHook/UseStateComponent';
-
+import UseEffectComponent from './React-hooks/useEffectHook/UseEffectComponent';
+import UseRefComponent from './React-hooks/useRefHook/UseRefComponent';
+import UseMemoComponent from './React-hooks/useMemoHook/UseMemoComponent';
 
 import './App.css';
 
@@ -28,7 +30,10 @@ function App() {
                                   </Suspense>
                                 } />
 
-        <Route path="/usestate" element={<UseStateComponent />} />
+        <Route path="/useState" element={<UseStateComponent />} />
+        <Route path="/useEffect" element={<UseEffectComponent />} />
+        <Route path="/useRef" element={<UseRefComponent />} />
+        <Route path="/useMemo" element={<UseMemoComponent />} />
         {/*<Route path="/products" element={<Products />}>    
             <Route index element={<ProductsFeatures />} />     
             <Route path="feature" element={<ProductsFeatures />} />
