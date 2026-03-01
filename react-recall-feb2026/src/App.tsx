@@ -6,6 +6,7 @@ import UseStateComponent from './React-hooks/useStateHook/UseStateComponent';
 import UseEffectComponent from './React-hooks/useEffectHook/UseEffectComponent';
 import UseRefComponent from './React-hooks/useRefHook/UseRefComponent';
 import UseMemoComponent from './React-hooks/useMemoHook/UseMemoComponent';
+import UseReducerComponent from './React-hooks/UseReducerHook/UseReducerComponent';
 
 import './App.css';
 
@@ -34,6 +35,7 @@ function App() {
         <Route path="/useEffect" element={<UseEffectComponent />} />
         <Route path="/useRef" element={<UseRefComponent />} />
         <Route path="/useMemo" element={<UseMemoComponent />} />
+        <Route path="/useReducer" element={<UseReducerComponent />} />
         {/*<Route path="/products" element={<Products />}>    
             <Route index element={<ProductsFeatures />} />     
             <Route path="feature" element={<ProductsFeatures />} />
